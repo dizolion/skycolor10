@@ -1,0 +1,42 @@
+* {
+  background-color: #000000;
+  text-align: center;
+}
+  
+p {
+  font-size: 10px;
+  color: rgb(255, 255, 255)
+}
+
+
+
+.p {
+  font-size: 10px;
+  color: rgb(255, 255, 255)
+}
+
+
+.a {
+ 
+  color:rgb(255, 255, 255)
+}
+
+
+.h6 {
+  font-family: ivymode, sans-serif;
+  font-style: italic;
+  font-weight: 200;
+  color: rgb(0, 136, 255);
+}
+
+.c1 {
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  padding: 10px;
+  font-size: 20px;
+  text-align: center;
+  border-bottom-right-radius: 25%;
+  border-top-left-radius: 25%;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
