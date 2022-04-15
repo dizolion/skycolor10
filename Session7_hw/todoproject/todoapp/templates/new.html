@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'new.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://use.typekit.net/sdi8tue.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor='black'>
+    <h4 class="top">Tell me what to do<br>네가 할 일이 궁금해</h4>
+    <br>
+    <form action="" method="post" class="container">
+        {% csrf_token %}
+        <div>
+            <label for="title" class="title">title</label>
+            <br>
+            <input type="text" name="title" id="title" placeholder="너의 할 일">
+        </div>
+        <br>
+        <div>
+            <label for="content" class="title">content</label>
+            <br>
+            <textarea name="content" id="content" cols="30" rows="10" placeholder="상세한 내용"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="deadline" class="title">deadline</label>
+            <br>
+            <input type="date" name="deadline" id="deadline">
+        </div>
+        <br>
+        <button type="submit">create</button>
+        <br>
+        <br>
+    </form>
+</body>
+</html>
