@@ -7,28 +7,37 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>전공</h1>
+    <h2>전공</h2>
+    <a href="{% url 'addMajor' %}"class="button">전공 추가하기</a>
     <div>
     <ul>
         {% for major in majors %}
-        <li>{{ major.name }}</li>
+        <div>
+            <li>
+                <span class="bold">{{ major.name }}
+            </li>
+        </div>
+
         {% endfor %}
     </ul>
-    </div>
-
-<a href="{% url 'addMajor' %}">전공 추가하기</a>
 
 
-    <h1>과목</h1>
+<h2>과목</h2>
+<a href="{% url 'addSubject' %}" class="button">과목 추가하기</a>
+<ol> 
+    {% for subject in subjects %}
     <div>
-    <ul>
-        {% for subject in subjects %}
-        <li>{{ subject.major }}</li>
-        {% endfor %}
-    </ul>
-    </div>
-    
+        <li>
+            <div>
+                <span class="bold">{{ subject.subject_name }}</span>
+                <span> | {{ subject.major }} |</span>
+                <span>{{ subject.prof_name }} </span>
 
-<a href="{% url 'addSubject' %}">과목 추가하기</a>
+                <div class="memos"><a href="a"></a>{{ subject.memo|linebreaks }}</a></div>
+            </div>
+        </li>
+    </div>
+</ol>
+{% endfor %}
 </body>
 </html>

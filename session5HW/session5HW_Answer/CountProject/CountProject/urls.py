@@ -1,7 +1,7 @@
-"""subjectProject URL Configuration
+"""CountProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.0/topics/http/urls/
+    https://docs.djangoproject.com/en/3.2/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -15,16 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from subjectApp import views
-from subjectApp.views import AddMajorView
-from subjectApp.views import AddSubjectView
-from subjectApp.views import EditSubjectView
+from CountApp import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('addMajor', AddMajorView.as_view(), name="addMajor"),
-    path('home', views.home, name="home"),
-    path('addSubject', AddSubjectView.as_view(), name="addSubject"),
-    path('editSubject/<int:pk>', EditSubjectView.as_view(), name="editSubject"),
-    path('computer', views.computerSubjectView, name="computer"),
+    path('count', views.count, name='count'),
+    path('result', views.result, name='result'),
 ]

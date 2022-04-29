@@ -26,4 +26,14 @@ class AddSubjectView(CreateView):
     success_url = reverse_lazy('home')
 
 
-    
+class EditSubjectView(UpdateView):
+    model = Subject
+    form_class = SubjectModelForm
+    template_name = "EditSubject.html"
+    success_url = reverse_lazy('home') 
+
+def computerSubjectView(request):
+    subjects = Subject.objects.all()
+    computerMajor = subjects.filter(major__name='산업정보디자인')
+
+    return render(request, 'computer.html', {'computerMajor': computerMajor})

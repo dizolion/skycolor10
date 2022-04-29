@@ -26,7 +26,7 @@ class Migration(migrations.Migration):
                 ('subject_name', models.CharField(blank=True, default='', max_length=200)),
                 ('prof_name', models.CharField(blank=True, default='', max_length=200)),
                 ('memo', models.CharField(blank=True, default='', max_length=200)),
-                ('major', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='subject', to='subjectApp.major')),
+                ('major', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='subject', to='subjectApp.subject')),
             ],
         ),
     ]
