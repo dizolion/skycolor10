@@ -1,0 +1,43 @@
+h2 { 
+    font-family: pretendard, sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+    font-style: normal;
+    text-align: center;
+    color:rgb(0, 0, 0);
+    margin-top: 60px;
+}
+    
+am{
+    border: 5px solid #ffffff;
+    border-radius: 20px;
+    padding: 70px;
+    width: 500px;
+    height: 300px;
+    position:absolute;
+    margin-left:430px;
+    margin-top:25px;
+    box-shadow: 20px 10px 50px #D4D7DC;
+}
+
+button{
+    color:rgb(255, 255, 255);
+    font-family: pretendard, sans-serif;
+    background: linear-gradient( 80deg, #3b4fd2, #4A62F8 );
+    border: 1px solid #dddddd;
+    box-shadow: 3px 5px 15px #D4D7DC;
+    border-radius: 20px;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left:210px;
+    margin-top:120px;
+}
+
+h3{
+    font-family: pretendard, sans-serif;
+    margin-top:100px;
+    margin-left: 120px;
+    
+}

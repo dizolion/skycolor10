@@ -18,32 +18,35 @@
     <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}">
     <title>Home</title>
 </head>
-<body bgcolor='#EFF3F6'>
-    <h2>모든 전공</h2>
-    <h3><ul>
-        {% for major in majors %}
-        <li>
-            <a href="{% url 'major_list' major.name %}">{{ major.name }}</a> | <a href="{% url 'EditMajor' major.pk %}">수정</a> 
-            <a href="{% url 'delete_major' major.pk %}">삭제</a>
-        </li>
-        {% endfor %}
-    </h3>
-    <a href="{% url 'addMajor' %}">전공 추가</a>
-    
-   
-    <h4>모든 과목</h4>
-    <h5>
-        {% for subject in subjects %}
-        <li>
-            {{ subject.Subject_name }} | {{ subject.Subject_major }} | {{ subject.professor }}
-            <br>
-            {{ subject.memo }}
-            <a href="{% url 'EditSubject' subject.pk %}">수정</a>
-            <a href="{% url 'delete_subject' subject.pk %}">삭제</a>
-        </li>
-        {% endfor %} </h5>
-    
-    <a href="{% url 'addSubject' %}">과목 추가</a>
+<body bgcolor="#F6F5FA">
+    <div>
+        <h1 class=up>모든 전공</h1>
+        <h0 class=up>모든 과목</h0>
+    </div>
+    <div>
+        <middle1>
+            {% for major in majors %}
+            <li>
+                <a href="{% url 'major_list' major.name %}">{{ major.name }}</a> |<a href="{% url 'EditMajor' major.pk %}">수정</a>
+                <a href="{% url 'delete_major' major.pk %}">삭제</a>
+            </li>
+            {% endfor %}
+        </middle1>
+        <middle2>
+            {% for subject in subjects %}
+            <li>
+                {{ subject.Subject_name }} | {{ subject.Subject_major }} | {{ subject.professor }}
+                {{ subject.memo }}
+                <a href="{% url 'EditSubject' subject.pk %}">수정</a>
+                <a href="{% url 'delete_subject' subject.pk %}">삭제</a>
+            </li>
+            {% endfor %} 
+        </middle2>
+    </div>
+   <div>
+   <h9><a href="{% url 'addMajor' %}">전공 추가</a></h9>
+   <h8><a href="{% url 'addSubject' %}">과목 추가</a></h8>
+   </div>
 
 </body>
 </html>

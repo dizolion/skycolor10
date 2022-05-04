@@ -12,6 +12,9 @@ class MajorModelForm(forms.ModelForm):
         widgets = {
             'name' : forms.TextInput(attrs={'class': 'form-control', 'placeholder' : '전공을 입력하세요.'}),
         }
+        labels = {
+            'name': '전공 이름',
+        }
 
 class SubjectModelForm(forms.ModelForm):
     class Meta:
