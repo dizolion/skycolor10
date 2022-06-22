@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'app/create_page.css' %}">
+  <meta charset="UTF-8">
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'qoa5wtn',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>게시글 작성</title>
+</head>
+
+<body bgcolor="#121212">
+  <div class="page-wrapper">
+    <div class="page-container">
+      <header class="page-header">
+        <h2>아무 글이나<br>아무렇게 써보자</h2>
+      </header>
+
+      <div class="content-container">
+        <form method="POST">
+        {% csrf_token %}
+          <label for="title">제목</label>
+          <br>
+          <input id="title" name="title" placeholder="제목을 입력하세요">
+          <br><br>
+          <label for="content">내용</label><br>
+          <textarea id="content" name="content" placeholder="내용을 입력하세요">
+          </textarea>
+          <br>
+          <button class="submit" type="submit">작성</button>
+          <br>
+          <a class="btn" href="{% url 'list_page' %}">&nbsp;&nbsp;&nbsp;뒤로가기&nbsp;&nbsp;&nbsp; </a>
+        </form>
+      </div>
+    </div>
+</body>
+
+</html>

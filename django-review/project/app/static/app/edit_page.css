@@ -1,0 +1,108 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 25%;
+  margin-left: 5%;
+}
+
+h2 {
+  color: white;
+  margin: 0px;
+}
+
+.content-container {
+  border: solid;
+  margin: 15px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: transparent;
+}
+
+input {
+  width: 200px;
+  height: 40px;
+  background-color: #121212;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: rgb(0, 255, 140);
+}
+
+textarea {
+  width: 400px;
+  height: 200px;
+  background-color:#121212;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: rgb(0, 255, 140);
+}
+
+.submit {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  padding: 2%;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 2rem;
+  margin-left: 3%;
+  
+}
+
+.submit:hover {
+  background-color: rgb(0, 255, 140);
+  color:rgb(0, 0, 0);
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 30%;
+  margin-left: 16%;
+}
+
+.btn {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  padding: 2%;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-radius: 2rem;
+  margin-left: 5%;
+}
+.btn:hover {
+  background-color:rgb(0, 255, 140);
+}
+
+
+label {
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 20px;
+  color:white;
+  margin-bottom: 30%;
+}

@@ -1,0 +1,66 @@
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.page-header {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 25px;
+  margin-top: 25%;
+  margin-left: 20.5%;
+}
+.btn {
+  background-color: rgb(255, 255, 255);
+  width: 35%;
+  padding: 2%;
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  border-style: solid;
+  border-radius: 2rem;
+  border-width: 4px;
+  border-color: rgb(18 18 18);
+}
+.btn:hover {
+  background-color:rgb(0, 255, 140);
+}
+
+h2 {
+  color: white;
+  margin: 0px;
+}
+
+.btn-group {
+  display: flex;
+  margin-top: 30%;
+}
+
+p {
+  font-family: source-han-sans-korean,sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 15px;
+  color: rgb(0, 255, 140);
+}
+
+.content-container {
+  border: solid;
+  margin-top: 25%;
+  margin-bottom: 15%;
+  margin-left: 4%;
+  padding: 5px;
+  height: max-content; 
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  color:  rgb(0, 255, 140);
+}

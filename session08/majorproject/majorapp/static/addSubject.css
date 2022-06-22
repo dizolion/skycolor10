@@ -14,7 +14,7 @@ div{
     position:absolute;
     margin-left:450px;
     margin-top:20px;
-    box-shadow: 20px 10px 50px #D4D7DC;
+    box-shadow: 10px 10px 50px #595c62;
 }
 
 button{
@@ -22,7 +22,7 @@ button{
         font-family: pretendard, sans-serif;
         background: linear-gradient( 80deg, #3b4fd2, #4A62F8 );
         border: 1px solid #dddddd;
-        box-shadow: 3px 5px 15px #D4D7DC;
+        box-shadow: 3px 5px 15px #595c62;
         border-radius: 20px;
         width: 80px;
         height: 50px;

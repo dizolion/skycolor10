@@ -11,7 +11,7 @@
     border-radius: 50px;
     padding-top: 15px;
     margin-top: 20px;
-    box-shadow: 10px 5px 20px #c4c9d1;
+    box-shadow: 10px 5px 20px #595c62;
 }
 
 
@@ -41,7 +41,7 @@ middle1 {
     margin-left: 270px;
     margin-bottom: 30px;
     margin-top: 30px;
-    box-shadow: inset 4px 0px 20px #D2D1E0, 10px 10px 20px #c4c9d1;
+    box-shadow: inset 4px 0px 20px #595c62, 10px 10px 20px #595c62;
 }
 
 middle2 {
@@ -56,7 +56,7 @@ middle2 {
     margin-left: 190px;
     margin-bottom: 20px;
     margin-top: 30px;
-    box-shadow: inset 4px 0px 20px #D2D1E0, 10px 10px 20px #c4c9d1;
+    box-shadow: inset 4px 0px 20px #595c62, 10px 10px 20px #595c62;
 }
 
 h9 {
@@ -71,7 +71,7 @@ h9 {
     height: 40px;
     border-radius: 50px;
     padding-top: 15px;
-    box-shadow: 10px 5px 20px #c4c9d1;
+    box-shadow: 10px 5px 20px #595c62;
     margin-left:380px;
     margin-bottom: 40px;
     margin-top: 20px;
@@ -89,7 +89,7 @@ h8 {
     height: 40px;
     border-radius: 50px;
     padding-top: 15px;
-    box-shadow: 10px 5px 20px #c4c9d1;
+    box-shadow: 10px 5px 20px #595c62;
     margin-left:410px;
     margin-bottom: 40px;
     margin-top: 20px;
